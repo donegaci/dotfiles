@@ -7,3 +7,5 @@ ln -sf .dotfiles/.tmux.conf
 ln -sf .dotfiles/.gitconfig
 ln -sf .dotfiles/.bashrc
 ln -sf .dotfiles/.zshrc
+
+echo "Done."
