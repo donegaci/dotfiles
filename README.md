@@ -13,4 +13,4 @@ I have included `dotfiles` for the following:
 
 # To use
   1. Clone this repo.
-  2. Run the `install.sh` script. This script creates symbolic links fot the `dotfiles` in this repo to the user's home directory.
+  2. Run the `install.sh` script. This script creates symbolic links for the `dotfiles` in this repo to the users home directory.
