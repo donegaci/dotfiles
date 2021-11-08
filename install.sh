@@ -9,10 +9,11 @@ ln -sf .dotfiles/.gitconfig
 ln -sf .dotfiles/.bashrc
 ln -sf .dotfiles/.zshrc
 
+cd ~/.dotfiles
 if [ ! -d "$HOME/.dotfiles/.oh-my-zsh" ]; then
   echo "Installing oh-my-zsh"
   sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-  ZSH="$HOME/.dotfiles/oh-my-zsh" sh install.sh
+  ZSH="$HOME/.dotfiles/.oh-my-zsh" sh install.sh
 fi
 
 if [ ! -d "$HOME/.dotfiles/.oh-my-zsh/custom/themes/powerlevel10k" ]; then
