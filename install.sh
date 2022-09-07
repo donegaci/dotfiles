@@ -3,6 +3,8 @@
 
 echo "Symlinking your dotfiles"
 
+mv dotfiles .dotfiles
+
 cd ~/
 ln -sf .dotfiles/.tmux.conf
 ln -sf .dotfiles/.gitconfig
@@ -14,7 +16,10 @@ if [ ! -d "$HOME/.dotfiles/.oh-my-zsh" ]; then
   echo "Installing oh-my-zsh"
   sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
   ZSH="$HOME/.dotfiles/.oh-my-zsh" sh install.sh
+  exec zsh
 fi
+
+
 
 if [ ! -d "$HOME/.dotfiles/.oh-my-zsh/custom/themes/powerlevel10k" ]; then
   echo "Downloading powerlevel10k"
