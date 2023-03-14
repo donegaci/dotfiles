@@ -19,8 +19,6 @@ if [ ! -d "$HOME/.dotfiles/.oh-my-zsh" ]; then
   exec zsh
 fi
 
-
-
 if [ ! -d "$HOME/.dotfiles/.oh-my-zsh/custom/themes/powerlevel10k" ]; then
   echo "Downloading powerlevel10k"
   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $HOME/.dotfiles/.oh-my-zsh/custom/themes/powerlevel10k
