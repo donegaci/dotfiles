@@ -5,8 +5,6 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 echo "Symlinking your dotfiles"
 
-mv dotfiles .dotfiles
-
 cd ~/
 ln -sf dotfiles/.tmux.conf
 ln -sf dotfiles/.gitconfig
