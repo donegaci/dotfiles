@@ -5,12 +5,23 @@ This repo contains my configuration files (`dotfiles`) used to customise machine
 
 
 I have included `dotfiles` for the following:
-  - git
-  - tmux
-  - bash
-  - zsh
-  - ...
+  - `.zshrc` - Zsh configuration with oh-my-zsh and powerlevel10k theme
+  - `.gitconfig` - Git configuration and aliases
+  - `.tmux.conf` - Tmux configuration
+  - `.bashrc` - Bash aliases
+  - `.p10k.zsh` - Powerlevel10k theme configuration
+
+  ## Requirements
+
+- zsh
+- git
+- wget (for oh-my-zsh installation)
 
 # To use
   1. Clone this repo.
-  2. Run the `install.sh` script. This script creates symbolic links for the `dotfiles` in this repo to the users home directory.
+  2. Run the install script:
+   ```bash
+   cd ~/dotfiles
+   ./install.sh
+   ```
+   3. Restart your terminal or run `exec zsh`
