@@ -14,7 +14,7 @@ ln -sf dotfiles/.p10k.zsh
 
 
 cd "$SCRIPT_DIR"
-if [ ! -d "$HOME/dotfiles/.oh-my-zsh" ]; then
+if [ ! -f "$HOME/dotfiles/.oh-my-zsh/oh-my-zsh.sh" ]; then
   echo "Installing oh-my-zsh"
   export ZSH="$HOME/dotfiles/.oh-my-zsh"
   sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
